@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "@types/chrome": "^0.0.287",
+    "typescript": "^5.7.2"
+  },
+  "scripts": {
+    "build": "npm run build-css && tsc && npm run copy-html && npm run copy-images && npm run copy-manifest",
+    "build-css": "node-sass src/scss/ -o dist/css/",
+    "copy-html": "cpx \"src/**/*.html\" dist",
+    "copy-images": "cpx \"src/images/**/*\" dist/images",
+    "copy-manifest": "cpx \"manifest.json\" dist"
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

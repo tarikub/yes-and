@@ -1,0 +1,14 @@
+# Ignore the dist/ directory
+dist/
+
+# Ignore the node_modules/ directory
+node_modules/
+
+# Ignore all files with .crx extension
+*.crx
+
+# Ignore all files with .pem extension
+*.pem
+
+# Ignore .env configurations
+*.env
